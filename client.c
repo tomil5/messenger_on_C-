@@ -22,7 +22,7 @@ int main() {
     server_addr.sin_port = htons(PORT);
 
     // укажи IP сервера в локальной сети (например "192.168.1.10")
-    if (inet_pton(AF_INET, "127.0.0.1", &server_addr.sin_addr) <= 0) {
+    if (inet_pton(AF_INET, "192.168.0.63", &server_addr.sin_addr) <= 0) {
         perror("inet_pton"); exit(1);
     }
 
